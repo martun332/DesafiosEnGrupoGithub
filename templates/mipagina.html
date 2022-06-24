@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio en grupo</title>
+    <title>MVT + Martin Baez</title>
 </head>
 <body>
-    <h1> Desafio en grupo de {{nombre}} {{apellido}} </h1>
-    {% if edad >= 18 %}
+    
+    <h1> Pagina de {{nombre}} {{apellido}} </h1>
+    <!--{% if edad >= 18 %}
         <h3>martin es mayor de edad</h3>
     {% elif edad < 18%}
     <h3>martin es menor de edad</h3>
@@ -16,10 +17,37 @@
     <h3>no se sabe la edad</h3>
     {% endif %}
 
+    <h1> Mi familia: </h1>
     <ul>
         {% for x in listafamilia %}
             <li>{{x}}</li>
         {% endfor %}
+    </ul> -->
+
+    <h4>Hijo:</h4>
+    <ul>
+        <li>Nombre: {{martin.nombre}}</li>
+        <li>edad :{{martin.edad}}</li>
     </ul>
+
+    <h4>Hija:</h4>
+    <ul>
+        <li>Nombre: {{marianela.nombre}}</li>
+        <li>edad :{{marianela.edad}}</li>
+    </ul>
+
+    <h4>Padre:</h4>
+    <ul>
+        <li>Nombre: {{marcelo.nombre}}</li>
+        <li>edad :{{marcelo.edad}}</li>
+    </ul>
+
+    <h4>Madre:</h4>
+    <ul>
+        <li>Nombre: {{mariela.nombre}}</li>
+        <li>edad :{{mariela.edad}}</li>
+    </ul>
+
+
 </body>
 </html>
