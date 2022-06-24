@@ -7,6 +7,17 @@
     <title>Desafio en grupo</title>
 </head>
 <body>
-    <h1> Desafio en grupo de {{nombre}} </h1>
+    <h1> Desafio en grupo de {{nombre}} {{apellido}} </h1>
+    {% if edad >= 18 %}
+        <h3>martin es mayor de edad</h3>
+    {% elif edad < 18%}
+    <h3>martin es menor de edad</h3>
+    {% else %}
+    <h3>no se sabe la edad</h3>
+    {% endif %}
+
+    {% for x in listafamilia %}
+    <p>{{x}}</p>
+    {% endfor %}
 </body>
 </html>
