@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from DesafiosEnGrupo.views import mi_template
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("mipagina/", mi_template)
 ]

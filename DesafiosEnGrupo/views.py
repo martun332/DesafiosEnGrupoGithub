@@ -1,12 +1,12 @@
-from re import template
-from unittest import loader
+from django.template import Template, context, loader
+from datetime import datetime
 
 from django.http import HttpResponse
 
 
 def mi_template(request):
-    minombre = "Martin"
+    nombre = "Martin"
     
     template1 = loader.get_template("mipagina.html")
-    render1 = template1.render({"minombre":minombre})
+    render1 = template1.render({"nombre" : nombre})
     return HttpResponse(render1)
