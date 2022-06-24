@@ -16,8 +16,10 @@
     <h3>no se sabe la edad</h3>
     {% endif %}
 
-    {% for x in listafamilia %}
-    <p>{{x}}</p>
-    {% endfor %}
+    <ul>
+        {% for x in listafamilia %}
+            <li>{{x}}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
