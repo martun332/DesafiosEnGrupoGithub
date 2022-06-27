@@ -55,7 +55,7 @@ ROOT_URLCONF = 'DesafiosEnGrupo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"C:\Users\Usuario\Desktop\Python\Practica\PracticaPortfolio\templates"],
+        'DIRS': ["templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

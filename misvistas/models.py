@@ -5,4 +5,4 @@ from django.db import models
 class familiar(models.Model):
     nombre= models.CharField(max_length=30)
     edad= models.IntegerField()
-    fecha_creacion= models.DateField(null=True)
+    fecha_creacion= models.DateField(auto_now_add=True)
